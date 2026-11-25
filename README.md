@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎬 Catálogo de Filmes (Full Stack)
 
 Frontend HTML/CSS/JS · Backend Node.js + Express (API REST) · SQLite · JWT (autenticação/autorização) · Jest + Selenium (testes).
@@ -59,3 +60,6 @@ Login de admin: `admin@filmes.com` / `admin123` (admin edita/exclui qualquer fil
 4. Em *Environment* adicione `JWT_SECRET` com um valor longo e aleatório.
 5. Use a URL pública gerada. (No plano gratuito os dados do SQLite somem a cada redeploy; adicione um disco persistente ou use o banco só para demonstração.)
 6. Opcional: `docker build -t filmes . && docker run -p 3000:3000 filmes`.
+=======
+# Entregavel_6
+>>>>>>> 1638ffdb752fc988ea44167d3ee85a8de7928175
