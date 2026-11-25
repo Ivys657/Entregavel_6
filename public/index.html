@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo de Filmes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎬 Catálogo de Filmes</h1>
+  <div id="user-area">
+    <span id="user-name"></span>
+    <button id="logout-btn" hidden>Sair</button>
+  </div>
+</header>
+<main>
+  <section id="auth-box">
+    <h2>Entrar ou cadastrar</h2>
+    <input id="name" placeholder="Nome (só no cadastro)">
+    <input id="email" type="email" placeholder="E-mail">
+    <input id="password" type="password" placeholder="Senha (mín. 6)">
+    <button id="login-btn">Entrar</button>
+    <button id="register-btn" class="secondary">Cadastrar</button>
+    <p id="auth-msg" class="msg"></p>
+  </section>
+
+  <section id="toolbar">
+    <input id="search" placeholder="Buscar por título ou diretor">
+    <select id="genre-filter">
+      <option value="">Todos os gêneros</option>
+      <option>Drama</option><option>Comédia</option><option>Ficção</option>
+      <option>Ação</option><option>Terror</option><option>Animação</option>
+    </select>
+  </section>
+
+  <section id="movie-form" hidden>
+    <h2 id="form-title">Novo filme</h2>
+    <input id="m-title" placeholder="Título">
+    <input id="m-year" type="number" placeholder="Ano">
+    <select id="m-genre">
+      <option>Drama</option><option>Comédia</option><option>Ficção</option>
+      <option>Ação</option><option>Terror</option><option>Animação</option>
+    </select>
+    <input id="m-director" placeholder="Diretor">
+    <input id="m-rating" type="number" step="0.1" min="0" max="10" placeholder="Nota (0-10)">
+    <textarea id="m-synopsis" placeholder="Sinopse"></textarea>
+    <button id="save-movie">Salvar</button>
+    <button id="cancel-edit" class="secondary">Cancelar</button>
+    <p id="form-msg" class="msg"></p>
+  </section>
+
+  <div id="movie-list"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

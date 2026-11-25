@@ -1,0 +1,24 @@
+{
+  "name": "catalogo-filmes",
+  "version": "1.0.0",
+  "description": "Catálogo de filmes full stack (Express + SQLite + HTML/JS)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest",
+    "test:e2e": "node tests/e2e/selenium.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "selenium-webdriver": "^4.25.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": { "testMatch": ["**/tests/*.test.js"] }
+}
